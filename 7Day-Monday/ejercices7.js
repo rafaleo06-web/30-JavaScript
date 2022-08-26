@@ -156,3 +156,139 @@
         console.log(removeItem(4))
         */
 //Declare un nombre de función sumOfNumbers . Toma un parámetro numérico y suma todos los números en ese rango.
+        /*function sumOfNumbers(number){
+            let sum=0
+            for (let index = number; index >= 0 ; index--) {
+                sum+=index
+            }
+            return sum;
+        }
+        console.log(sumOfNumbers(5))
+        */
+//Declare un nombre de función sumOfOdds . Toma un parámetro numérico y agrega todos los números impares en ese rango.
+        /*function sumOfOdds(number){
+                    let array=[]
+                    for (let index = number; index >= 0 ; index--) {
+                        if (index%2==1) {
+                            array.push(index)
+                        }
+                    }
+                    return array;
+                }
+        console.log(sumOfOdds(5))
+        */
+//Declare un nombre de función sumOfEven . Toma un parámetro numérico y suma todos los números pares en ese rango.
+        /*function sumOfEven(number) {
+            let sum=0
+            for (let index = number; index >=0 ; index--) {
+                if (index%2==0) {
+                sum+=index
+                }
+            }
+            return sum
+        }
+        console.log(sumOfEven(5))
+        */
+//Declare un nombre de función evensAndOdds . Toma un entero positivo como parámetro y cuenta el número de pares e impares en el número.
+//evensAndOdds(100);
+//The number of odds are 50.
+//The number of evens are 51.
+        /*function evensAndOdds(number) {
+            counterEvens=0
+            counterOdds=0
+            for (let index = number; index >=0; index--) {
+                if (index%2==0) {
+                    counterEvens++
+                }else{
+                    counterOdds++
+                }
+            }
+            console.log("Evens: "+counterEvens)
+            console.log("Odds: "+counterOdds)
+        }
+        evensAndOdds(100)
+        */
+//Escriba una función que tome cualquier número de argumentos y devuelva la suma de los argumentos
+        /*function sumArguments(){
+            sum=0
+            for (let index = 0; index < arguments.length; index++) {
+                sum+=arguments[index]
+            }
+            return sum
+        }
+        console.log(sumArguments(1,2,3,4))
+        */
+//Escriba una función que genere un randomUserIp .
+        /*function randomUserIp() {
+            oneSubred=192
+            twoSubred=168
+            threeSubred=Math.floor(Math.random()*283)
+            fourSubred=Math.floor(Math.random()*283)
+            console.log(oneSubred+"."+ twoSubred+ "."+ threeSubred+"." +fourSubred)
+        }
+        randomUserIp()
+        */
+//Escriba una función que genere una MacAddress aleatoria
+        /*function macAdrees() {
+            const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            const charactersLength = characters.length;
+            let adrres=''
+            for ( let i = 0; i < 12; i++ ) {
+                adrres+= characters.charAt(Math.floor(Math.random() * charactersLength));
+                if(i==1 || i==3 || i==5 || i==7 || i==9){
+                    adrres+=':'
+                }
+            }
+            return adrres
+        }
+        console.log(macAdrees())
+        */
+//Declare un nombre de función randomHexaNumberGenerator . Cuando se llama a esta función,
+//genera un número hexadecimal aleatorio. La función devuelve el número hexadecima #ee33df
+        /*function randomHexaNumberGenerator() {
+            const characters ='0123456789ABCDEF';
+            const charactersLength = characters.length;
+            let numberhexadecimal='#'
+            for ( let i = 0; i < 6; i++ ) {
+                numberhexadecimal+= characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return numberhexadecimal
+        }
+        console.log(randomHexaNumberGenerator())
+        */
+//Declare un nombre de función userIdGenerator . Cuando se llama a esta función, genera una
+//identificación de siete caracteres. La función devuelve el id
+//console.log(userIdGenerator());
+//41XTDbE
+        /*function userIdGenerator() {
+            const characters='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz'
+            const charactersLength = characters.length;
+            let result=''
+            for ( let i = 0; i < 7; i++ ) {
+                result+= characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result
+        }
+        console.log(userIdGenerator())
+        */
+//Nivel3
+//Modifique la userIdGenerator . Declare un nombre de función userIdGeneratedByUser . No toma
+//ningún parámetro, pero toma dos entradas usando prompt(). Una de las entradas es la cantidad de
+//caracteres y la segunda entrada es la cantidad de ID que se supone que se generarán.
+        /*function userIdGeneratedByUser() {
+        const characters='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz'
+            const charactersLength = characters.length;
+            const countCharacters=prompt('Cantidad de caracteres')
+            const countIds=prompt('Numero de IDs')
+            let result=''
+            for (let index = 0; index < countIds; index++) {
+                result+='\n'
+                for ( let i = 0; i < countCharacters; i++ ) {
+                    result+= characters.charAt(Math.floor(Math.random() * charactersLength));
+                }
+            }
+            return result
+        }
+        console.log(userIdGeneratedByUser())
+        */
+//Escribe un nombre de función rgbColorGenerator y genera colores rgb.
