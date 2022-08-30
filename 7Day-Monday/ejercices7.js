@@ -333,3 +333,58 @@
         console.log(arrayOfRgbColors(5))
         */
 //Escriba una función convertHexaToRgb que convierta el color hexa a rgb y devuelva un color rgb.
+        /*function convertHexaToRgb(numberInput) {
+            var red = parseInt(numberInput[1]+numberInput[2],16);
+            var green = parseInt(numberInput[3]+numberInput[4],16);
+            var blue = parseInt(numberInput[5]+numberInput[6],16);
+            console.log(`rgb(${red},${green},${blue})`)
+        }
+        convertHexaToRgb("#ff0000")
+        */
+//Escriba una función convertRgbToHexa que convierta rgb a color hexa y devuelva un color hexa.
+        /*function convertToHexa(rgb) {
+            let rgbConvertHexa=rgb.toString(16)
+            return rgbConvertHexa.length < 2 ? "0"+rgbConvertHexa : rgbConvertHexa
+        }
+
+        function RgbToHexa(r,g,b) {
+            var red = convertToHexa(r);
+            var green = convertToHexa(g);
+            var blue = convertToHexa(b);
+            return "#"+red+green+blue
+            
+        }
+        console.log(RgbToHexa(0,51,255))
+        */
+//Escriba una función generateColors que pueda generar cualquier número de colores hexa o rgb.
+//console.log(generateColors('hexa', 3)) - output: ['#a3e12f', '#03ed55', '#eb3d2b']
+        /*function generateColorse(toConvert, amount) {
+            if (toConvert == 'hexa') {
+                const characters ='0123456789ABCDEF';
+                const charactersLength = characters.length
+                const arrayNumberHexadecimal=[]
+                let numberhexadecimal='#'
+                for (let index = 0; index < amount; index++) {
+                    for ( let i = 0; i < 6; i++ ) {
+                        numberhexadecimal+= characters.charAt(Math.floor(Math.random() * charactersLength));
+                    }
+                    arrayNumberHexadecimal.push(numberhexadecimal)
+                    numberhexadecimal='#'
+                }
+                return arrayNumberHexadecimal
+
+            } else if(toConvert == 'rgb'){
+                const arrayRGB=[]
+                for (let index = 0; index < amount; index++) {
+                    numberOne=Math.floor(Math.random()*283)
+                    numberTwo=Math.floor(Math.random()*283)
+                    numberThree=Math.floor(Math.random()*283)
+                    let color=`rgb(${numberOne},${numberTwo},${numberThree})`
+                    arrayRGB.push(color)
+                }
+                return arrayRGB
+            }
+        }
+        console.log(generateColorse('rgb',5))
+        */
+//Llame a su función shuffleArray , toma una matriz como parámetro y devuelve una matriz barajada
