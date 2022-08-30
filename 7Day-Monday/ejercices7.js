@@ -292,3 +292,44 @@
         console.log(userIdGeneratedByUser())
         */
 //Escribe un nombre de función rgbColorGenerator y genera colores rgb.
+//rgbColorGenerator() rgb(125,244,255)
+        /*function rgbColorGenerator() {
+            numberOne=Math.floor(Math.random()*283)
+            numberTwo=Math.floor(Math.random()*283)
+            numberThree=Math.floor(Math.random()*283)
+            console.log('rgb('+numberOne+','+numberTwo+','+numberThree+')')
+        }
+        rgbColorGenerator()
+        */
+//Escriba una función arrayOfHexaColors que devuelva cualquier cantidad de colores hexadecimales en una matriz.
+        /*function arrayOfHexaColors(countNumber) {
+            const characters ='0123456789ABCDEF';
+            const charactersLength = characters.length
+            const arrayNumberHexadecimal=[]
+            let numberhexadecimal='#'
+            for (let index = 0; index < countNumber; index++) {
+                for ( let i = 0; i < 6; i++ ) {
+                    numberhexadecimal+= characters.charAt(Math.floor(Math.random() * charactersLength));
+                }
+                arrayNumberHexadecimal.push(numberhexadecimal)
+                numberhexadecimal='#'
+            }
+            return arrayNumberHexadecimal
+        }
+        console.log(arrayOfHexaColors(5))
+        */
+//Escriba una función arrayOfRgbColors que devuelva cualquier cantidad de colores RGB en una matriz.
+        /*function arrayOfRgbColors(countRGB) {
+            const arrayRGB=[]
+            for (let index = 0; index < countRGB; index++) {
+                numberOne=Math.floor(Math.random()*283)
+                numberTwo=Math.floor(Math.random()*283)
+                numberThree=Math.floor(Math.random()*283)
+                let color=`rgb(${numberOne},${numberTwo},${numberThree})`
+                arrayRGB.push(color)
+            }
+            return arrayRGB
+        }
+        console.log(arrayOfRgbColors(5))
+        */
+//Escriba una función convertHexaToRgb que convierta el color hexa a rgb y devuelva un color rgb.
