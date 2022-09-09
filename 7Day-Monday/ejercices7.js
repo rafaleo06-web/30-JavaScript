@@ -388,3 +388,36 @@
         console.log(generateColorse('rgb',5))
         */
 //Llame a su función shuffleArray , toma una matriz como parámetro y devuelve una matriz barajada
+        /*function shuffleArray(array) {
+            let t=array.sort(function () { 
+                return (0.5-Math.random())//Metodo sort()-(funcion PARA ODENAR: devuelve -,+,ó 0) Y (ALEATORIO: - ó 0 y + ó 0) - (Multiplicacion GENERA SOLO 0, RESTA 0 y -)
+            })
+            return [...t]
+        }
+
+        const array=[1,2,3,4,5,6,7,8,9,10]
+        console.log(shuffleArray(array))
+        */
+//Llame a su función factorial , toma un número entero como parámetro y devuelve un factorial del número
+        /*function factorial(number) {
+            let sumMultiplicador=1
+            for (let index = number; index > 0; index--) {
+                sumMultiplicador*=index  
+            }
+            return sumMultiplicador  
+        }
+        console.log(factorial(3))
+        */
+//Llame a su función isEmpty , toma un parámetro y verifica si está vacío o no
+        /*function isEmpty1(param){
+            if(param===''){
+                return "vacia"
+            }else{
+                return "no vacia ==> "+param
+            }
+        }
+        var param = "Paris"
+        var array=[1,2,3,4,5,6]
+        console.log(isEmpty1(param))
+        */
+//
