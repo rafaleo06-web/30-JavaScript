@@ -420,4 +420,133 @@
         var array=[1,2,3,4,5,6]
         console.log(isEmpty1(param))
         */
-//
+//Escriba una función llamada sumOfArrayItems , toma un parámetro de matriz y devuelve la suma de todos los elementos. Compruebe si todos los elementos de la matriz son tipos de números. Si no, dé una respuesta razonable.
+        /*
+        function sumOfArrayItems(arr) {
+            let suma=0
+            for (let index = 0; index < arr.length; index++) {
+                if (typeof arr[index]==='number') {
+                    suma+=arr[index]            
+                }else{
+                    return arr[index]+': el tipo de dato no es numerico'
+                }
+            }
+            return suma
+        }
+        const arr=[1,2,3,4,5,'rafa']
+        console.log(sumOfArrayItems(arr))
+        */
+//Escriba una función llamada promedio , toma un parámetro de matriz y devuelve el promedio de los elementos. Compruebe si todos los elementos de la matriz son tipos de números. Si no, dé una respuesta razonable.
+        /*
+        function sumOfArrayItems(arr) {
+            let suma=0
+            let promedio=0
+
+            for (let index = 0; index < arr.length; index++) {
+                if (typeof arr[index]==='number') {
+                    suma+=arr[index]            
+                }else{
+                    return arr[index]+': el tipo de dato no es numerico'
+                }
+            }
+            return promedio=suma/arr.length
+        }
+        const arr=[1,2,3,4,5,'mar']
+        console.log(sumOfArrayItems(arr))
+        */
+//Escriba una función llamada modificarArray que tome la matriz como parámetro y modifique el quinto elemento de la matriz y devuelva la matriz. Si la longitud de la matriz es inferior a cinco, devuelve 'elemento no encontrado'.
+        /*
+        function modificarArray(array) {
+            if (array.length >= 5) {
+                for (let index = 0; index < array.length; index++) {
+                    if (index==4) {
+                        array[index]=array[index].toUpperCase()
+                    }
+                }
+            }else{
+                return 'elemento no encontrado'
+            } 
+            return array
+        }
+        const array=['Google', 'Facebook','Apple', 'Amazon','Microsoft',  'IBM']
+        console.log(modificarArray(array))
+        */
+//Escriba una función llamada isPrime , que verifique si un número es un número primo.
+        /*
+        function isPrime(number){
+            for (let index = 2; index < number; index++) {
+                if (number%index==0) {
+                    return 'no es primo'
+                }else{
+                    return 'si es primo'
+                }
+                
+            }
+        }
+        console.log(isPrime(8))
+        */
+//Escriba una función que verifique si todos los elementos son únicos en la matriz.
+        /*
+        function isUnique(array){
+            return array.length !== new Set(array).size;//new set: news elementos, size: cantidad
+        }    //si NO tiene repetidos es ==, SI tiene repetidos es !== 
+             //object SET, almacena valores unicos
+        const array=['apple', 'apple', 'banana', 'pear']
+        console.log(isUnique(array))
+        */
+//Escriba una función que verifique si todos los elementos de la matriz son del mismo tipo de datos.
+        /*
+        function isType(array){
+            return new Set( array.map( x => typeof x ) ).size <= 1;
+        }//MAP, crea array con los resultados
+        const array=['apple', 'apple', 'banana', 'pear',5]
+        console.log(isType(array))
+        */
+//El nombre de la variable de JavaScript no admite caracteres o símbolos especiales, excepto $ o _. Escriba una función isValidVariable que verifique si una variable es una variable válida o no válida.
+        /*
+        function isValidVariable(params) {
+            var regex = '^([a-zA-Z_$][a-zA-Z\d_$]*)$'
+            if (params.match(regex)) {
+                return 'is valid'
+            }else{
+                return 'is invalid'
+            }
+        }
+        var variable='auto$'
+        console.log(isValidVariable(variable))
+        */
+//Escriba una función que devuelva una matriz de siete números aleatorios en un rango de 0-9. Todos los números deben ser únicos.
+        /*
+        function isUniqueAleatorio() {
+            const array=[]
+            let element
+            while (array.length < 7) {
+                element=Math.floor(Math.random() * 10)
+                if(array.indexOf(element) === -1) array.push(element)  
+            }
+            return array
+        }
+        console.log(isUniqueAleatorio())
+        */
+//Escriba una función llamada reverseCountries, toma la matriz de países y primero copia la matriz y devuelve el reverso de la matriz original
+const countries = [
+    'albania',
+    'denmark',
+    'ethiopia',
+    'united states',
+    'new zealand',
+    'finland',
+    'germany',
+    'canada',
+    'ireland',
+    'japan',
+    'bolivia',
+    'kenya',
+    'hungary'
+]
+function reverseCountries(array) {
+    let copy=countries.slice()
+    return copy.reverse()
+}
+console.log(reverseCountries(countries))
+
